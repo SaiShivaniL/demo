@@ -1,4 +1,31 @@
 <!doctype html>
 <html>
-   hello Welcome to regestering process
+   <body>
+      <h1>Registration Form</h1>
+      <form action="action.php">
+         <label for="name">Name:</label>
+         <input type="text" id="name"><br><br>
+         <label for="phone">Phone Number:</label>
+         <input type="tel" id="phone"><br><br>
+         <label for="courses">Choice of Courses:</label><br>
+         <input type="radio" id="bachelors" name="courses" value="bachelors">
+         <label for="bachelors">Bachelors</label><br>
+         <input type="radio" id="masters" name="courses" value="masters">
+         <label for="masters">masters</label><br><br>
+         <label for="description">Description:</label>
+         <input type="text" id="description"><br><br>
+         <label for="subject interests">Subject Interests:</label><br>
+         <input type="checkbox" id="Physics" name="subject interests" value="Physics">
+         <label for="Physics">Physics</label><br>
+         <input type="checkbox" id="Chemistry" name="subject interests" value="Chemistry">
+         <label for="Chemistry">Chemistry</label><br>
+         <input type="checkbox" id="Mathematics" name="subject interests" value="Mathematics">
+         <label for="Mathematics">Mathematics</label><br>
+         <input type="checkbox" id="Computer Science" name="subject interests" value="Computer Science">
+         <label for="Computer Science">Computer Science</label><br>
+         <input type="checkbox" id="ECE" name="subject interests" value="Electronics and Communication">
+         <label for="ECE">Electronics and Communication</label><br>
+         <input type="submit" value="Submit">
+      </form>
+   </body>
 </html>
