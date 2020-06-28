@@ -1,31 +1,62 @@
 <!doctype html>
 <html>
+   <head>
+      <title>Register form</title>
+      <style>
+         body{
+            background-image: url("data:image/jpeg;base64,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");
+            font-family: serif;
+            font-style: italic;
+            padding-left: 10px;
+         }
+         h1{
+            color:crimson;
+            font-family: serif;
+            font-style: italic;
+            font-size: 40px;
+            padding: 10px;
+         }
+         a:link, a:visited {
+  background-color: blue;
+  color: white;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+a:hover, a:active {
+  background-color: red;
+}
+      </style>
+   </head>
    <body>
-      <h1>Registration Form</h1>
+      <h1><center>Registration Form</center></h1>
       <form action="/action.php" id="form1">
          <label for="name">Name:</label>
          <input type="text" id="name"><br><br>
          <label for="phone">Phone Number:</label>
-         <input type="tel" id="phone"><br><br>
-         <label for="courses">Choice of Courses:</label><br>
+         <input type="tel" id="phone"><br>
+         <h2>Choice of Courses</h2>
          <input type="radio" id="bachelors" name="courses" value="bachelors">
          <label for="bachelors">Bachelors</label><br>
          <input type="radio" id="masters" name="courses" value="masters">
          <label for="masters">masters</label><br><br>
          <label for="description">Description:</label>
-         <input type="text" id="description"><br><br>
-         <label for="subject interests">Subject Interests:</label><br>
-         <input type="checkbox" id="Physics" name="subject interests" value="Physics">
+         <input type="text" id="description"><br>
+         <h2>Subject Interests:</h2>
+         <input type="checkbox" id="Physics" name="subinterests" value="Physics">
          <label for="Physics">Physics</label><br>
-         <input type="checkbox" id="Chemistry" name="subject interests" value="Chemistry">
+         <input type="checkbox" id="Chemistry" name="subinterests" value="Chemistry">
          <label for="Chemistry">Chemistry</label><br>
-         <input type="checkbox" id="Mathematics" name="subject interests" value="Mathematics">
+         <input type="checkbox" id="Mathematics" name="subinterests" value="Mathematics">
          <label for="Mathematics">Mathematics</label><br>
-         <input type="checkbox" id="Computer Science" name="subject interests" value="Computer Science">
-         <label for="Computer Science">Computer Science</label><br>
-         <input type="checkbox" id="ECE" name="subject interests" value="Electronics and Communication">
+         <input type="checkbox" id="CSE" name="subinterests" value="Computer Science">
+         <label for="CSE">Computer Science</label><br>
+         <input type="checkbox" id="ECE" name="subinterests" value="Electronics and Communication">
          <label for="ECE">Electronics and Communication</label><br>
-         <input type="submit" value="Submit">
+        <!-- <input type="submit" value="Submit">-->
+       <center><a href="action.php" target="_blank">Submit</a></center>
       </form>
    </body>
 </html>

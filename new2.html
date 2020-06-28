@@ -2,9 +2,49 @@
 <html>
     <head>
         <title>L Sai Shivani</title>
+        <style>
+            body{
+                background-color: papayawhip;
+                font-family: serif;
+                font-style: italic;
+            }
+            h1{
+                color: blue;
+                text-align: center;
+                font-family: serif;
+                font-style: italic;
+                padding: 10px;
+                position: sticky;
+            }
+            a:link{
+                color: red;
+            }
+            a:visited{
+                color: green;
+            }
+            a:hover{
+                color:hotpink;
+                text-decoration: underline;
+            }
+            a:active{
+                color:blue;
+            }
+            ul{
+                list-style-type: square;
+                list-style-position: outside;
+            }
+            ol{
+                list-style-type: upper-roman;
+            }
+            h1.hidden{
+                display: none;
+            }
+
+        </style>
     </head>
-    <body style="background-color: papayawhip;">
-        <h1>Courses I attended</h1>
+    <body>
+        <h1>Courses I attended!!!</h1>
+        <h1 class="hidden">This is a hidden text</h1>
         <ol>
             <li>An Introduction to python</li>
             <ul>
@@ -24,6 +64,6 @@
                 <li>Trees</li>
             </ul>
         </ol>
-        <h1>click here to <a href="register.html">Register</a></h1>
+        <h2>click here to <a href="register.html" target="_blank">Register</a></h2>
     </body>
 </html>

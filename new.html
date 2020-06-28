@@ -1,21 +1,81 @@
 <!doctype html>
 <html>
 <head>
-    <title>L Sai Shivani</title>
+    <title >L Sai Shivani</title>
+    <style>
+        body{
+            background-color:papayawhip;
+            font-family: serif;
+            font-style: italic;
+        }
+        h1{
+            color: blue;
+            text-align: center;
+            font-family: serif;
+            font-style: italic;
+            padding: 10px;
+        }
+        table{
+            border-collapse: collapse;
+            width: 50%;
+            outline-style: double;
+        }
+        table,td,th{
+            border: 1px solid black;
+            padding: 8px;
+        }
+        tr:nth-child(even)
+        {
+            background-color: #f2f2f2;
+        }
+        img{
+            float: left;
+        }
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+            position:sticky;
+           }
+        li {
+            float: left;
+            position: sticky;
+           }
+        li a {
+             display: block;
+             color: white;
+             text-align: center;
+             padding: 14px 16px;
+             text-decoration: none;
+             position: sticky;
+             }
+        li a:hover {
+                    background-color: #111;
+                    position: sticky;
+                   }
+    </style>
 </head>
-<body style="background-color:papayawhip;">
-    <img src="nature.jpg" align="right" height=150 width=150></img>
-    <h1>Name: L Sai Shivani</h1>
+<body>
+    <ul>
+        <li><a class="active" href="#home">Home</a></li>
+        <li><a href="register.html">Registration</a></li>
+        <li><a href="personal.html">Personal Details</a></li>
+    </ul>
+    <img src="nature.jpg"  height=200 width=200></img>
+    <h1><center>What I learnt about html!!!</center></h1>
+    <h2>Name: L Sai Shivani</h2>
     <h2>College: G.Narayanamma Institute of Technology and Science</h2>
     <h2>Stream Name:<a href="https://www.bmu.edu.in/social/what-is-computer-science-engineering/">CSE</a></h2>
     <div class="mydiv">
-    <h1>What I learnt about html!!!</h1>
+    <h2>My View:</h2>
     <p>HTML is hyper text markup language. <br>It is a language used for creating web pages.It describes the structure of a web page.It can be done in any editor even in notepad but should add a .html tag while saving the page.It can be viewed through a browser.<br>I feel it is easier to learn html if we know some of the basics.</p>
     </div>
     <div class="mydiv2">
     <h2>My Marks of previous semester</h2>
     <h4>II B.Tech I semester</h4>
-    <table style="width:50%"border="9">
+    <table>
         <tr>
         <th>S.No</th>
         <th>Subject Name</th>
@@ -24,47 +84,47 @@
         <tr>
             <td>1</td>
             <td>Probability and Statistics</td>
-            <td><center>9.0</center></td>
+            <td style="text-align:right">9.0</td>
         </tr>
         <tr>
             <td>2</td>
             <td>Digital Logic Design</td>
-            <td><center>10.0</center></td>
+            <td style="text-align:right">10.0</td>
         </tr>
         <tr>
             <td>3</td>
             <td>Engineering Mechanics</td>
-            <td><center>10.0</center></td>
+            <td style="text-align:right">10.0</td>
         </tr>
         <tr>
             <td>4</td>
             <td>Data Structures</td>
-            <td><center>9.0</center></td>
+            <td style="text-align:right">9.0</td>
         </tr>
         <tr>
             <td>5</td>
             <td>Object Oriented Programming</td>
-            <td><center>9.0</center></td>
+            <td style="text-align:right">9.0</td>
         </tr>
         <tr>
             <td>6</td>
             <td>IT Workshop</td>
-            <td><center>9.0</center></td>
+            <td style="text-align:right">9.0</td>
         </tr>
         <tr>
             <td>7</td>
             <td>Data Structures through C++ Lab</td>
-            <td><center>10.0</center></td>
+            <td style="text-align:right">10.0</td>
         </tr>
         <tr>
             <td>8</td>
             <td>OOP programming through Java Lab</td>
-            <td><center>9.0</center></td>
+            <td style="text-align:right">9.0</td>
         </tr>
     </table>
     <h3>SGPA:9.37</h3>
     </div>
     <h2>A Demo to Iframes</h2>
-    <iframe src="new2.html" width ="75%" height="100"></iframe>
+    <iframe src="new2.html" width ="75%" height="200"></iframe>
 </body>
 </html>
