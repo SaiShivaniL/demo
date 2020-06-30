@@ -2,6 +2,14 @@
 <html>
 <head>
     <title >L Sai Shivani</title>
+    <script>
+        function mouseOver(){
+            document.getElementById("col").style.color="red";
+        }
+        function mouseOut(){
+            document.getElementById("col").style.color="white";
+        }
+    </script>
     <style>
         body{
             background-color:papayawhip;
@@ -59,9 +67,9 @@
 </head>
 <body>
     <ul>
-        <li><a class="active" href="#home">Home</a></li>
-        <li><a href="register.html">Registration</a></li>
-        <li><a href="personal.html">Personal Details</a></li>
+        <li><a id="col" class="active" href="#home" onmouseover="mouseOver()" onmouseout="mouseOut()">Home</a></li>
+        <li><a href="register.html" >Registration</a></li>
+        <li><a  href="personal.html" >Personal Details</a></li>
     </ul>
     <img src="nature.jpg" height=200 width=200></img>
     <h1><center>What I learnt about html!!!</center></h1>
