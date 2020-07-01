@@ -1,13 +1,69 @@
 <!doctype html>
-<html>
+<html lang="en">
     <head>
+        <meta charset="utf-8">
+        <title>Personal.html</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
         <style>
             body{
                 background-color: papayawhip;
             }
+            span {
+    background: #def3ca;
+    padding: 3px;
+    float: left;
+  }
         </style>
+        <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
     </head>
     <body>
-        <p>Name:&nbsp;L Sai Shivani<br>College:&nbsp;G.Narayanamma Institute of Technology and Sciences<br>Email:&nbsp;saishivani.wnp@gmail.com<br>Stream:&nbsp;CSE<br></p>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="new.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="register.html">Register here</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link " href="personal.html">Personal Details</a>
+                </li>
+              </ul>
+              <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+              </form>
+            </div>
+          </nav>
+          <br>
+          <center><h1>PERSONAL DETAILS</h1></center>
+        <p>&emsp;<b>Name</b>:&nbsp;L Sai Shivani<br>&emsp;<b>College</b>:&nbsp;G.Narayanamma Institute of Technology and Sciences<br>&emsp;<b>Email</b>:&nbsp;saishivani.wnp@gmail.com<br>&emsp;<b>Stream</b>:&nbsp;CSE<br></p>
+        <br><br>
+        <button id="hider">Hide</button>
+        <button id="shower">Show</button>
+        <div>
+        <span>This</span> <span>Information</span> <span>can</span>
+        <span>be</span> <span>hided</span> <span>and</span>
+        <span>displayed.</span> <span>Check it using buttons above ....!!!</span>
+        </div>
+        <script>
+            $( "#hider" ).click(function() {
+            $( "span:last-child" ).hide( "fast", function() {
+              $( this ).prev().hide( "fast", arguments.callee );
+              });
+              });
+           $( "#shower" ).click(function() {
+           $( "span" ).show( 2000 );
+           });
+        </script>
     </body>
 </html>

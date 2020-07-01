@@ -1,6 +1,10 @@
 <!doctype html>
 <html>
 <head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
     <title >L Sai Shivani</title>
     <script>
         function mouseOver(){
@@ -39,7 +43,7 @@
         img{
             float: left;
         }
-        ul {
+        /*ul {
             list-style-type: none;
             margin: 0;
             padding: 0;
@@ -62,22 +66,46 @@
         li a:hover {
                     background-color: #111;
                     position: sticky;
-                   }
+                   }*/
     </style>
 </head>
 <body>
-    <ul>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="new.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="register.html">Register here</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="personal.html">Personal Details</a>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          </form>
+        </div>
+      </nav>
+    <!--<ul>
         <li><a id="col" class="active" href="#home" onmouseover="mouseOver()" onmouseout="mouseOut()">Home</a></li>
         <li><a href="register.html" >Registration</a></li>
         <li><a  href="personal.html" >Personal Details</a></li>
-    </ul>
+    </ul>-->
     <img src="nature.jpg" height=200 width=200></img>
     <h1><center>What I learnt about html!!!</center></h1>
     <h2>Name: L Sai Shivani</h2>
     <h2>College: G.Narayanamma Institute of Technology and Science</h2>
     <h2>Stream Name:<a href="https://www.bmu.edu.in/social/what-is-computer-science-engineering/">CSE</a></h2>
     <div class="mydiv">
-    <h2>My View:</h2>
+    <h2><b>My View:</b></h2>
     <p>HTML is hyper text markup language. <br>It is a language used for creating web pages.It describes the structure of a web page.It can be done in any editor even in notepad but should add a .html tag while saving the page.It can be viewed through a browser.<br>I feel it is easier to learn html if we know some of the basics.</p>
     </div>
     <div class="mydiv2">
@@ -144,7 +172,7 @@
         </tr>
     </table>
     </div>
-    <h2>A Demo to Iframes</h2>
+    <h2><b>A Demo to Iframes:</b></h2>
     <iframe src="new2.html" width ="75%" height="200"></iframe>
 </body>
 
