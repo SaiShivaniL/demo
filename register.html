@@ -5,7 +5,8 @@
       <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-      <title>Register form</title>
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>   
+  <title>Register form</title>
       <script>
          function formValidation()
          {
@@ -90,6 +91,9 @@ a:hover, a:active {
 color: #FF0000;
 font-size: 10pt;
 }
+.spanSuccess {
+color: green;
+}
 
       </style>
    </head>
@@ -102,11 +106,11 @@ font-size: 10pt;
        
          <div class="collapse navbar-collapse" id="navbarSupportedContent">
            <ul class="navbar-nav mr-auto">
-             <li class="nav-item active">
-               <a class="nav-link" href="new.html">Home <span class="sr-only">(current)</span></a>
-             </li>
              <li class="nav-item">
-               <a class="nav-link" href="register.html">Register here</a>
+               <a class="nav-link" href="new.html">Home </a>
+             </li>
+             <li class="nav-item active">
+               <a class="nav-link" href="register.html">Register here <span class="sr-only">(current)</span></a>
              </li>
              <li class="nav-item">
                <a class="nav-link " href="personal.html">Personal Details</a>
@@ -120,21 +124,21 @@ font-size: 10pt;
        </nav>
        <br>
       <h1><center>Registration Form</center></h1>
-      <form action="#" name="form1" onsubmit="return formValidation();">
-         <label for="name">Name:</label>
+      <form action="#" name="form1" onsubmit="return formValidation();" >
+         <label for="name"><b>Name</b>:</label>
          <input type="text" id="name" name="name">
          <p class="rq">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*Enter alphabets only without balnk spaces.</p><br>
-         <label for="phone">Phone Number:</label>
+         <label for="phone"><b>Phone Number</b>:</label>
          <input type="tel" id="phone" name="phone">
          <p class="rq">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*Enter number in 9********6 format.</p>
-         <p>Choice of Courses</p>
+         <p><b>Choice of Courses</b></p>
          <input type="radio" id="bachelors" name="bachelors" value="bachelors">
          <label for="bachelors">Bachelors</label><br>
          <input type="radio" id="masters" name="masters" value="masters">
          <label for="masters">masters</label><br><br>
-         <label for="description">Description:</label>
+         <label for="description"><b>Description</b>:</label>
          <input type="text" id="description">
-         <p>Subject Interests:</p>
+         <p><b>Subject Interests</b>:</p>
          <p class="rq">*Select atleast one checkbox.</p>
          <input type="checkbox" id="Physics" name="subinterests" value="Physics">
          <label for="Physics">Physics</label><br>
@@ -149,5 +153,14 @@ font-size: 10pt;
          <input type="submit"name="submit" value="submit" >
       <!-- <center><a href="action.php" target="_blank">Submit</a></center>-->
       </form>
+      <span class="spanSuccess"></span>
+<script>
+$( "form" ).submit(function( event ) {
+
+$( "span" ).text( "Submitted Successfully..." ).show();
+event.preventDefault();
+
+});
+</script>
    </body>
 </html>
